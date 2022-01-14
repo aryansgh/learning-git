@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="http://localhost:3000/api/driver" method="GET">
+        <h2>Find a driver in your area</h2>
+        <div class="login-form">
+            <label for="email">Longitude</label>
+            <input type="text" name="longitude" required/>
+            <div class="email error"></div>
+            <label>Latitude</label>
+            <input name="latitude" required/>
+            <div class="password error"></div>
+            <button>Check</button>
+        </div>
+
+    </form>
+</body>
+</html>

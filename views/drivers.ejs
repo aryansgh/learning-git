@@ -1,0 +1,28 @@
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    
+    table {
+      width: 100%;
+    }
+</style>
+<table class="table table-inverse">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% for(var i=0; i < drivers.length; i++) { %>
+      <tr>
+        <td><%= drivers[i].name %></td>
+        <td><%= drivers[i].rating %></td>
+        <td><%= drivers[i].available%></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
